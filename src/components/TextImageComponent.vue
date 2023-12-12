@@ -14,9 +14,6 @@
         </div>
         
     </div>
-    <div class="footer row mt-5 d-flex align-items-center">
-        <p class="mt-3 text-center">Créé par Yanis Capelle et Enzo Palermo </p>
-    </div>
 </template>
 
 <script>
