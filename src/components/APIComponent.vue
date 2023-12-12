@@ -26,7 +26,7 @@
     <div class="row justify-content-center d-flex my-5 api-response mb-5" v-if="apiResponse">
         <div class="col-5">
             <div class="row mb-4">Résultat :</div>
-            <div class="row border border-dark-subtle rounded p-1 overflow-y-scroll response mb-5">{{ apiResponse }}</div>
+            <div class="row border border-dark-subtle rounded p-1 overflow-y-scroll response mb-5"><pre>{{ formattedResponse }}</pre></div>
         </div>
     </div>
 </template>
@@ -44,10 +44,16 @@ export default {
             apiResponse: null,
         };
     },
+    computed: {
+    formattedResponse() {
+        // Formatez la réponse de l'API pour l'afficher de manière lisible
+        return JSON.stringify(this.apiResponse, null, 2);
+        },
+    },
     methods: {
         async submitForm() {
             try {
-                const response = await fetch(this.formData.url + this.formData.parameters, {
+                const response = await fetch(this.formData.url, {
                     method: this.formData.method,
                     headers: {
                         'Content-Type': 'application/json',
