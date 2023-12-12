@@ -44,15 +44,16 @@ export default {
                 parameters: {
                     siret: 79317749400028,
                 }
-            }, computed: {
+            }, 
+            apiResponse: null
+        };
+    },
+    computed: {
                 formattedResponse() {
                     // Formatez la réponse de l'API pour l'afficher de manière lisible
                     return JSON.stringify(this.apiResponse, null, 2);
                 },
             },
-            apiResponse: null
-        };
-    },
     methods: {
         submitForm() {
             this.fetchData();
