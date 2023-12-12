@@ -1,7 +1,7 @@
 <template>
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
-            <router-link to="/">Accueil</router-link>
+            <router-link class="navbar-brand" to="/">Accueil</router-link>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                 aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -9,13 +9,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item ms-5">
-                        <router-link to="/contact">Contact</router-link>
+                        <router-link class="nav-link" to="/contact">Contact</router-link>
+                    </li>
+                    <li class="nav-item mx-3">
+                        <router-link class="nav-link" to="/API">API</router-link>
                     </li>
                     <li class="nav-item">
-                        <router-link to="/API">API</router-link>
-                    </li>
-                    <li class="nav-item">
-                        <router-link to="/bonus">Bonus</router-link>
+                        <router-link class="nav-link" to="/bonus">Bonus</router-link>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
