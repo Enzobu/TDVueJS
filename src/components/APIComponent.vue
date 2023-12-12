@@ -47,7 +47,7 @@ export default {
     methods: {
         async submitForm() {
             try {
-                const response = await fetch(this.formData.url, {
+                const response = await fetch(this.formData.url + this.formData.parameters, {
                     method: this.formData.method,
                     headers: {
                         'Content-Type': 'application/json',
