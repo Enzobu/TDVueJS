@@ -1,6 +1,8 @@
 <template>
-    <TextImageComponent :textHome="textHome1" :imageURLHome="imageURLHome1"/>
-    <TextImageComponent :textHome="textHome2" :imageURLHome="imageURLHome2"/>
+    <div class="home">
+        <TextImageComponent :textHome="textHome1" :imageURLHome="imageURLHome1"/>
+        <TextImageComponent :textHome="textHome2" :imageURLHome="imageURLHome2"/>
+    </div>
  </template>
  
  <script>

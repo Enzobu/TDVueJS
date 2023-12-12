@@ -1,5 +1,5 @@
 <template>
-    <p>
-        BONUS
-    </p>
+    <div class="bonus">
+        Bonus
+    </div>
 </template>
