@@ -25,15 +25,5 @@
             </div>
         </div>
     </nav>
+    <router-view></router-view>
 </template>
-
-<script>
-export default {
-  data() {
-    return {
-    };
-  },computed: {
-    
-  }
-};
-</script>

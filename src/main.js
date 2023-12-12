@@ -1,11 +1,10 @@
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from "vue-router";
 import App from './App.vue'
-import Home from './views/Home.vue';
-import Contact from './views/Contact.vue';
-import API from './views/API.vue';
-import Bonus from './views/Bonus.vue';
-//import router from './router'
+import Home from './views/HomeView.vue';
+import Contact from './views/ContactView.vue';
+import API from './views/APIView.vue';
+import Bonus from './views/BonusView.vue';
 
 const router = createRouter({
     history: createWebHistory(),

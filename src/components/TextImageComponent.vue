@@ -21,12 +21,10 @@
 
 <script>
 export default {
-  data() {
-    return {
-        textHome: '',
-        imageURLHome: '',
-    };
-  }
+    props: {
+        textHome: String,
+        imageURLHome: String,
+    },
 };
 </script>
 
