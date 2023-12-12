@@ -40,4 +40,8 @@
     .footer {
         background-color: rgb(231, 231, 231);
     }
+
+    p {
+        text-align: justify;
+    }
 </style>
