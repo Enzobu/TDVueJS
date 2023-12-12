@@ -7,7 +7,7 @@
                         <p>{{ textHome }}</p>
                     </div>
                     <div class="col-sm-6 ">
-                        <img class="img rounded-4 shadow-lg" src="{{ imageURLHome }}" alt="">
+                        <img class="img rounded-4 shadow-lg" :src="imageURLHome" alt="">
                     </div>
                 </div>
             </div>
