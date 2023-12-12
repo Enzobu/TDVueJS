@@ -1,7 +1,7 @@
 <template>
     <div class="mt-5">
         <div class="row justify-content-center">
-            <div class="col-sm-8">
+            <div class="col-sm-5">
                 <form @submit.prevent="submitForm">
                     <div>
                         <label class="form-label" for="name">Nom:</label>
