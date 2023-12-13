@@ -25,9 +25,10 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   color: #2c3e50;
   width: 100%;
+  height: 100%;
 }
-.home, .API, .bonus {
-  min-height: 80vh;
+.content-container, body, html {
+  height: 100vh;
 }
 </style>
 

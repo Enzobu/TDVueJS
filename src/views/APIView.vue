@@ -1,5 +1,5 @@
 <template>
-    <div class="API">
+    <div class="content-container">
         <APIComponent />
     </div>
 </template>

@@ -1,5 +1,5 @@
 <template>
-    <div class="home">
+    <div class="content-container">
         <TextImageComponent :textHome="textHome1" :imageURLHome="imageURLHome1"/>
         <TextImageComponent :textHome="textHome2" :imageURLHome="imageURLHome2"/>
     </div>
