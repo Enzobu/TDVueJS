@@ -30,7 +30,7 @@
                 <div class="row mb-6">Résultat :</div>
                 <pre class="row border border-dark-subtle rounded p-1 response mb-5">{{ formattedResponse }}</pre>
             </div>
-        </div>  
+        </div>
     </div>
 </template>
 
@@ -46,16 +46,16 @@ export default {
                 parameters: {
                     siret: 79317749400028,
                 }
-            }, 
+            },
             apiResponse: null
         };
     },
     computed: {
-                formattedResponse() {
-                    // Formatez la réponse de l'API pour l'afficher de manière lisible
-                    return JSON.stringify(this.apiResponse, null, 2);
-                },
-            },
+        formattedResponse() {
+            // Formatez la réponse de l'API pour l'afficher de manière lisible
+            return JSON.stringify(this.apiResponse, null, 2);
+        },
+    },
     methods: {
         submitForm() {
             this.fetchData();

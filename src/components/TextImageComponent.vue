@@ -25,16 +25,16 @@ export default {
 </script>
 
 <style>
-    img {
-        object-fit: cover;
-        width: 90%;
-    }
+img {
+    object-fit: cover;
+    width: 90%;
+}
 
-    .footer {
-        background-color: rgb(231, 231, 231);
-    }
+.footer {
+    background-color: rgb(231, 231, 231);
+}
 
-    p {
-        text-align: justify;
-    }
+p {
+    text-align: justify;
+}
 </style>

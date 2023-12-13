@@ -5,8 +5,8 @@
 </template>
 
 <style>
-    .footer {
-        background-color: rgb(231, 231, 231);
-        width: 100%;
-    }
+.footer {
+    background-color: rgb(231, 231, 231);
+    width: 100%;
+}
 </style>

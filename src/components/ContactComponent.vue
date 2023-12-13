@@ -1,30 +1,30 @@
 <template>
-    <div class="mt-5">
-        <div class="row justify-content-center">
-            <div class="col-sm-5">
-                <span v-if="state === 1" class="badge text-bg-success mb-3">Message envoyé avec succès</span>
-                <form @submit.prevent="submitForm">
-                    <div>
-                        <label class="form-label" for="name">Nom:</label>
-                        <input class="form-control" type="text" id="name" v-model="formData.name" required />
-                    </div>
-                    <div class="my-3">
-                        <label class="form-label justify-content-start" for="email">Email:</label>
-                        <input class="form-control" type="email" id="email" v-model="formData.email" required />
-                    </div>
-                    <div>
-                        <label class="form-label" for="message">Message:</label>
-                        <textarea class="form-control" id="message" v-model="formData.message" required></textarea>
-                    </div>
-                    <div class="row d-flex align-items-center">
-                        <div class="col-sm-2">
-                            <button class="btn btn-primary mt-4" type="submit">Envoyer</button>
-                        </div>
-                    </div>
-                </form>
+  <div class="mt-5">
+    <div class="row justify-content-center">
+      <div class="col-sm-5">
+        <span v-if="state === 1" class="badge text-bg-success mb-3">Message envoyé avec succès</span>
+        <form @submit.prevent="submitForm">
+          <div>
+            <label class="form-label" for="name">Nom:</label>
+            <input class="form-control" type="text" id="name" v-model="formData.name" required />
+          </div>
+          <div class="my-3">
+            <label class="form-label justify-content-start" for="email">Email:</label>
+            <input class="form-control" type="email" id="email" v-model="formData.email" required />
+          </div>
+          <div>
+            <label class="form-label" for="message">Message:</label>
+            <textarea class="form-control" id="message" v-model="formData.message" required></textarea>
+          </div>
+          <div class="row d-flex align-items-center">
+            <div class="col-sm-2">
+              <button class="btn btn-primary mt-4" type="submit">Envoyer</button>
             </div>
-        </div>
+          </div>
+        </form>
+      </div>
     </div>
+  </div>
 </template>
   
 <script>

@@ -1,15 +1,15 @@
 <template>
     <div class="content-container">
-        <TextImageComponent :textHome="textHome1" :imageURLHome="imageURLHome1"/>
-        <TextImageComponent :textHome="textHome2" :imageURLHome="imageURLHome2"/>
+        <TextImageComponent :textHome="textHome1" :imageURLHome="imageURLHome1" />
+        <TextImageComponent :textHome="textHome2" :imageURLHome="imageURLHome2" />
     </div>
- </template>
+</template>
  
- <script>
- 
- import TextImageComponent from '../components/TextImageComponent.vue';
- 
- export default {
+<script>
+
+import TextImageComponent from '../components/TextImageComponent.vue';
+
+export default {
     name: 'App',
     components: {
         TextImageComponent,
