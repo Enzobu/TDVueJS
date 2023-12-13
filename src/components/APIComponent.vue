@@ -43,9 +43,7 @@ export default {
             formData: {
                 method: 'GET',
                 url: '',
-                parameters: {
-                    siret: 79317749400028,
-                }
+                parameters: ''
             },
             apiResponse: null
         };
@@ -63,10 +61,7 @@ export default {
         fetchData() {
             axios({
                 method: this.formData.method,
-                url: this.formData.url,
-                data: {
-                    siret: 79317749400028,
-                },
+                url: `${this.formData.url}?${this.formData.parameters.replace(/: /g, '=')}`,
                 headers: {
                     'Content-Type': 'application/json'
                 }
